@@ -1,0 +1,42 @@
+﻿@model Dashboard.Models.DummyTag
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DummyTag</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.C_TagName_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_TagName_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Average_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Average_)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Time_)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Time_)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.newcolumn }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
